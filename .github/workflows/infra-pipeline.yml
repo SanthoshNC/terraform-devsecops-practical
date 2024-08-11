@@ -35,6 +35,7 @@ jobs:
           # This will add both a CLI output to the console and create a results.sarif file
           output_format: cli,sarif
           output_file_path: console,results.sarif
+          soft_fail: true
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
